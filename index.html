@@ -23,33 +23,47 @@
 
 		<section class="section h-100 relative">
 	
-	    <nav class="navbar absolute navbar-expand-lg pt-5 align-items-start fixed-top container">
-	        <a class="navbar-brand" href="#">
-	            <img src="img/logo.png" alt="">
-	        </a>
-	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	        </button>
-	        <div class="collapse navbar-collapse justify-content-end pt-5" id="navbarNav">
-	            <ul class="navbar-nav pb-5 sup-font">
-	                <li class="nav-item active pl-3">
-	                    <a class="nav-link " href="#home">О нас<span class="sr-only">(current)</span></a>
-	                 </li>
-	                <li class="nav-item pl-3">
-	                    <a class="nav-link " href="#about">Услуги</a>
-	                </li>
-	                <li class="nav-item pl-3">
-	                    <a class="nav-link " href="#services">Портфолио</a>
-	                </li>
-	          
-	            </ul>
+	    <nav class="navbar absolute navbar-expand-lg fixed-top design-nav">
+	        <div class="container py-3">
+	            <a class="navbar-brand" href="#">
+	                <img class="imgg" src="img/logo.png" alt="">
+	            </a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	                <ul class="navbar-nav sup-font">
+	                    <li class="nav-item pl-3 active">
+	                        <a class="nav-link " href="#home">О нас<span class="sr-only">(current)</span></a>
+	                     </li>
+	                    <li class="nav-item pl-3 dropdown">
+	                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                            Услуги
+	                        </a>
+	                        <div class="dropdown-menu dropdown-menu-right setting" aria-labelledby="navbarDropdown">
+	                            <a class="dropdown-item px-4" href="#">Создание сайтов</a>
+	                            <a class="dropdown-item px-4" href="#">Создание сайтов</a>
+	                            <a class="dropdown-item px-4" href="#">Создание сайтов</a>
+	                            <a class="dropdown-item px-4" href="#">Создание сайтов</a>                     
+	                        </div>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link " href="#services">Портфолио</a>
+	                    </li>
+	              
+	                </ul>
+	            </div>
+	            <div class="pl-4">
+	                <div class="sub_h2 sub_h2--telephone">+38(097)-91-51-281</div>
+	                <div class="sub_h2 sub_h2--telephone">+38(097)-91-51-281</div>
+	            </div>
 	        </div>
 	    </nav>
 			<div class="container h-100">
 				<div class="row h-100">
-					<div class="col-md-6 text-center text-sm-left col-12 d-flex flex-column justify-content-end mb-10">
-						<h1 class="h1 py-3">От эскиза до воплощенного проекта!</h1>
-						<a class="btn btn--first " href="#go">Заказать сайт</a>
+					<div class="col-md-6 text-center text-sm-left col-12 d-flex flex-column justify-content-center">
+						<h1 class="h1 mt-5 py-4">От эскиза до воплощенного проекта!</h1>
+						<a class="btn btn--first" href="#go">Заказать сайт</a>
 					</div>
 					<div class="col-12 col-md-6 d-flex align-items-end" >
 						<img class="w-100" src="img/screen.png" alt="">
@@ -122,7 +136,7 @@
 				<div class="row ">
 					<h1 class="h1 h1--black mx-auto my-5">Услуги</h1>
 				</div>
-				<div class="row mt-5 rel">
+				<div class="row mt-5 pb-5 rel">
 					<div class="image_team image_team--services col-7">
 						<img class="shadowt w-100 d-block" src="img/services1.jpg" alt="">
 					</div>
