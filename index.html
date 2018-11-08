@@ -21,20 +21,22 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 
-		<section class="section h-100 relative">
+		<section class="section h-100 relative" id="home">
 	
 	    <nav class="navbar absolute navbar-expand-lg fixed-top design-nav">
 	        <div class="container py-3">
-	            <a class="navbar-brand" href="#">
+	            <a class="navbar-brand" href="#home">
 	                <img class="imgg" src="img/logo.png" alt="">
 	            </a>
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon"></span>
+	            <!-- <span class="navbar-toggler-icon"> -->
+	                <i class="fas fa-bars paragragh h2--color"></i>
+	           <!--  </span> -->
 	            </button>
 	            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	                <ul class="navbar-nav sup-font">
 	                    <li class="nav-item pl-3 active">
-	                        <a class="nav-link " href="#home">О нас<span class="sr-only">(current)</span></a>
+	                        <a class="nav-link " href="#about">О нас<span class="sr-only">(current)</span></a>
 	                     </li>
 	                    <li class="nav-item pl-3 dropdown">
 	                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,24 +50,24 @@
 	                        </div>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a class="nav-link " href="#services">Портфолио</a>
+	                        <a class="nav-link " href="#portfolio">Портфолио</a>
 	                    </li>
 	              
 	                </ul>
 	            </div>
-	            <div class="pl-4">
-	                <div class="sub_h2 sub_h2--telephone">+38(097)-91-51-281</div>
-	                <div class="sub_h2 sub_h2--telephone">+38(097)-91-51-281</div>
+	            <div class="pl-4 adaptive__menu">
+	                <div class="sub_h2 sub_h2--telephone"><a href="tel:+380979151281">+38(097)-91-51-281</a></div>
+	                <div class="sub_h2 sub_h2--telephone"><a href="tel:+380979151281">+38(097)-91-51-281</a></div>
 	            </div>
 	        </div>
 	    </nav>
 			<div class="container h-100">
 				<div class="row h-100">
-					<div class="col-md-6 text-center text-sm-left col-12 d-flex flex-column justify-content-center wow fadeInLeft">
-						<h1 class="h1 mt-5 py-4">От эскиза до воплощенного проекта!</h1>
-						<a class="btn btn--first" href="#go">Заказать сайт</a>
+					<div class="col-lg-6 text-lg-left text-center col-12 d-flex flex-column justify-content-lg-center justify-content-end wow fadeInLeft">
+						<h1 class="h1 mt-5 py-5">От эскиза до воплощенного проекта!</h1>
+						<a class="btn btn--first mx-auto mx-lg-0" href="#go">Заказать сайт</a>
 					</div>
-					<div class="col-12 col-md-6 d-flex align-items-end" >
+					<div class="col-12 col-lg-6 d-flex align-items-end justify-content-center" >
 						<div class="tv-rel">
 							<img class="w-100" src="img/screen2.png" alt="">
 							<div class="tv">
@@ -82,25 +84,17 @@
 								    </div>
 								  </div>
 								</div>
-								<!-- <div class="tv w-test">
-									<div class="w-test">
-										<img class="w-test" src="img/services1.jpg" alt="">						
-									</div>
-									<div class="w-test">
-										<img class="w-test" src="img/services1.jpg" alt="">						
-									</div>
-								</div> -->
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row abs d-flex justify-content-center w-100 container">
-					<a href="#"><i class="fas fa-chevron-down  arrow"></i></a>
+					<a href="#services"><i class="fas fa-chevron-down  arrow"></i></a>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-10" id="go">
+		<section class="py-10" id="about">
 			<div class="container">
 				<div class="row">
 					<h1 class="h1 h1--black mx-auto my-5">Наша команда</h1>
@@ -136,27 +130,88 @@
 					<div class="row">
 						<h1 class="h1 h1--black mx-auto my-5">Как мы работаем</h1>
 					</div>
-					<div class="row how_work">
-						<div class="col-md-4 col-12 d-flex justify-content-around align-items-center">
-							<i class="fas fa-adjust how_work how_work__icon"></i>
-							<div class="how_work">Днем и ночью</div>
-							<i class="fas fa-long-arrow-alt-right how_work how_work__iconsm"></i>
+					<div class="row how_work mb-5">
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/1.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
 						</div>
-						<div class="col-md-4 col-12 d-flex justify-content-around align-items-center">
-							<i class="fas fa-adjust how_work how_work__icon"></i>
-							<div class="how_work">Днем и ночью</div>
-							<i class="fas fa-long-arrow-alt-right how_work how_work__iconsm"></i>
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/2.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
 						</div>
-						<div class="col-md-4 col-12 d-flex justify-content-around align-items-center">
-							<i class="fas fa-adjust how_work how_work__icon"></i>
-							<div class="how_work">Днем и ночью</div>
-							
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/3.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+					<!-- </div> -->
+					<!-- <div class="row how_work mb-5"> -->
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/4.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/5.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/6.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+					<!-- </div> -->
+					<!-- <div class="row how_work"> -->
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/7.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/8.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 number" style="background-image: url(img/9.png);">
+							<div class="col-12 text-center py-5">
+								<i class="fas fa-adjust how_work how_work__icon"></i>
+							</div>
+							<div class="how_work col-12">
+								<h2 class="h2 text-center">Заявка</h2>					
+							</div>
 						</div>
 					</div>
 				</div>
 		</section>
 
-		<section class="py-10">
+		<section class="py-10" id="services">
 			<div class="container">
 				<div class="row ">
 					<h1 class="h1 h1--black mx-auto my-5">Услуги</h1>
@@ -165,8 +220,8 @@
 					<div class="image_team image_team--services col-7">
 						<img class="shadowt w-100 d-block" src="img/services1.jpg" alt="">
 					</div>
-					<div class="preview col-6 d-flex flex-column justify-content-around">
-						<h2 class="h2 h2--color">Создание сайтов</h2>
+					<div class="preview col-lg-6 col-md-9 col-12 d-flex flex-column justify-content-around wow fadeInRight">
+						<h2 class="h2 h2--color ">Создание сайтов</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ea commodi ipsam. Animi dolor officiis, architecto commodi quasi sed quisquam!</p>
 						<a class="btn btn--first " href="#go">Подробнее</a>
 					</div>
@@ -175,8 +230,8 @@
 					<div class="image_team image_team--services col-7 offset-5">
 						<img class="shadowt w-100 d-block" src="img/services1.jpg" alt="">
 					</div>
-					<div class="preview preview--left col-6 d-flex flex-column justify-content-around">
-						<h2 class="h2 h2--color">Создание сайтов</h2>
+					<div class="preview preview--left col-lg-6 col-md-9 col-12 d-flex flex-column justify-content-around wow fadeInLeft">
+						<h2 class="h2 h2--color ">Создание сайтов</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ea commodi ipsam. Animi dolor officiis, architecto commodi quasi sed quisquam!</p>
 						<a class="btn btn--first " href="#go">Подробнее</a>
 
@@ -192,49 +247,49 @@
 					<h1 class="h1 h1--black mx-auto my-5">Почему мы</h1>
 				</div>
 				<div class="row">
-					<div class="col-5 offset-1">
+					<div class="col-lg-5 offset-lg-1 col-10 offset-1">
 						<div class="row d-flex align-items-center">
 							<div class="col-2">
 								<i class="fas fa-adjust how_work how_work__icon"></i>
 							</div>
 							<div class="col-10">
 								<h2 class="h2">Креативно</h2>
-								<p class="whyus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
+								<p class="paragragh paragragh--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-5">
+					<div class="col-lg-5 col-10 offset-1">
 						<div class="row d-flex align-items-center">
 							<div class="col-2">
 								<i class="fas fa-adjust how_work how_work__icon"></i>
 							</div>
 							<div class="col-10">
 								<h2 class="h2">Креативно</h2>
-								<p class="whyus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
+								<p class="paragragh paragragh--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-5 offset-1">
+					<div class="col-lg-5 offset-lg-1 col-10 offset-1">
 						<div class="row d-flex align-items-center">
 							<div class="col-2">
 								<i class="fas fa-adjust how_work how_work__icon"></i>
 							</div>
 							<div class="col-10">
 								<h2 class="h2">Креативно</h2>
-								<p class="whyus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
+								<p class="paragragh paragragh--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-5">
+					<div class="col-lg-5 col-10 offset-1">
 						<div class="row d-flex align-items-center">
 							<div class="col-2">
 								<i class="fas fa-adjust how_work how_work__icon"></i>
 							</div>
 							<div class="col-10">
 								<h2 class="h2">Креативно</h2>
-								<p class="whyus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
+								<p class="paragragh paragragh--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, et.</p>
 							</div>
 						</div>
 					</div>
@@ -242,30 +297,46 @@
 			</div>
 		</section>
 
-		<section class="py-10">
+		<section class="py-10" id="portfolio">
 			<div class="container">
 				<div class="row">
 					<h1 class="h1 h1--black mx-auto my-5">Наши работы</h1>
 				</div>
 				<div class="portfolios">
 					<div class="mx-3">
-						<div class="col-12  image_team image_team--portfolio">
+						<div class="col-12  image_team image_team--portfolio tv-rel">
 							<img class="w-100" src="img/services1.jpg" alt="">
+							<div class="test image_team w-100 d-flex flex-column justify-content-center p-5">
+								<h2 class="h2 h2--color text-center">Project</h2>
+								<p class="text-center paragragh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quae ut labore tenetur ipsa itaque ea vero repellat fuga doloribus.</p>
+							</div>
 						</div>
 					</div>
 					<div class="mx-3">
-						<div class="col-12 image_team image_team--portfolio">
+						<div class="col-12  image_team image_team--portfolio tv-rel">
 							<img class="w-100" src="img/services1.jpg" alt="">
+							<div class="test image_team w-100 d-flex flex-column justify-content-center p-5">
+								<h2 class="h2 h2--color text-center">Project</h2>
+								<p class="text-center paragragh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quae ut labore tenetur ipsa itaque ea vero repellat fuga doloribus.</p>
+							</div>
 						</div>
 					</div>
 					<div class="mx-3">
-						<div class="col-12 image_team image_team--portfolio ">
+						<div class="col-12  image_team image_team--portfolio tv-rel">
 							<img class="w-100" src="img/services1.jpg" alt="">
+							<div class="test image_team w-100 d-flex flex-column justify-content-center p-5">
+								<h2 class="h2 h2--color text-center">Project</h2>
+								<p class="text-center paragragh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quae ut labore tenetur ipsa itaque ea vero repellat fuga doloribus.</p>
+							</div>
 						</div>
 					</div>
 					<div class="mx-3">
-						<div class="col-12 image_team image_team--portfolio">
+						<div class="col-12  image_team image_team--portfolio tv-rel">
 							<img class="w-100" src="img/services1.jpg" alt="">
+							<div class="test image_team w-100 d-flex flex-column justify-content-center p-5">
+								<h2 class="h2 h2--color text-center">Project</h2>
+								<p class="text-center paragragh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quae ut labore tenetur ipsa itaque ea vero repellat fuga doloribus.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -273,7 +344,7 @@
 		</section>
 
 
-		<section class="py-10 ">
+		<section class="py-10 py-10--pt-10">
 			<div class="row">
 				<h1 class="h1 h1--black mx-auto my-5">Отзывы</h1>
 			</div>
@@ -281,29 +352,29 @@
 			<div class="testimonial gradient py-10">
    				<div>
    					<div class="row">
-     					<div class="col-3 offset-2 p-0">
+     					<div class="col-3 offset-2 p-0 adaptive__testimonial">
      						<div class="image_team">
      							<img class="w-100 " src="img/team1.jpg" alt="">
      						</div>
      					</div>
-     				 	<div class="col-5 testimonials py-5 px-5">
+     				 	<div class="col-md-5 col-12 testimonials py-5 px-5">
      				 		<h2 class="h2">Anton</h2>
      				 		<div class="dark">Designer</div>
-     				 		<p class="whyus mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequatur illum praesentium aliquid quam cupiditate, officia ipsa libero sint provident, voluptatum </p>
+     				 		<p class="paragragh paragragh--color mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequatur illum praesentium aliquid quam cupiditate, officia ipsa libero sint provident, voluptatum </p>
      				 	</div>
      				</div>
    				</div>
     			<div>
     				<div class="row">
-     					<div class="col-3 offset-2 p-0">
+     					<div class="col-3 offset-2 p-0 adaptive__testimonial">
      						<div class="image_team">
      							<img class="w-100 " src="img/team1.jpg" alt="">
      						</div>
      					</div>
-     				 	<div class="col-5 testimonials py-5 px-5">
+     				 	<div class="col-md-5 col-12 testimonials py-5 px-5">
      				 		<h2 class="h2">Anton</h2>
      				 		<div class="dark">Designer</div>
-     				 		<p class="whyus mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequatur illum praesentium aliquid quam cupiditate, officia ipsa libero sint provident, voluptatum </p>
+     				 		<p class="paragragh paragragh--color mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequatur illum praesentium aliquid quam cupiditate, officia ipsa libero sint provident, voluptatum </p>
      				 	</div>
      				</div>
     			</div>
@@ -312,23 +383,11 @@
 		</section>
 		
 		
-		<section class="py-10">
+		<section class="bg-sup py-5">
 				<div class="container">
-					<div class="row">
+					<div class="row py-5">
 						<div class="col-12 text-center">
-							<img src="img/logo2.png" alt="">
-						</div>
-					</div>
-					<div class="row my-5">
-						<div class="col-6 h2">
-							<h2 class="h2 text-right dark">
-								+380979151281
-							</h2>
-						</div>
-						<div class="col-6 h2">
-							<h2 class="h2 text-left dark">
-								+380979151281
-							</h2>
+							<a href="#home"><img class="imgg" src="img/logo-back.png" alt=""></a>
 						</div>
 					</div>
 					<div class="row">
@@ -340,17 +399,17 @@
 							</li>
 							<li class="lisp lisp__item mx-3">
 								<a href="">
-									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-vk"></i>
 								</a>
 							</li>
 							<li class="lisp lisp__item mx-3">
 								<a href="">
-									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<div class="text-center dark mt-5">
+					<div class="text-center dark mt-3">
 						 © 2018  The Room 13`s
 					</div>
 				</div>
