@@ -332,43 +332,104 @@
 
 		<section class="py-10">
 			<div class="container">
-				<h1 class="h1 text-center py-5">Отзывы</h1>
+				<div class="row">
+					<h1 class="h1 mx-auto py-5">Отзывы</h1>
+				</div>
 				
 				<div class="testimonial">
-				 	<div class="row">
-				 			<div class="col-5 offset-1 testimoni">
-				 				<img src="img/port.jpg">
-				 				<div class="portfolio__bg"></div>
-				 				<button class="btn btn--first testimoni__btn">
-				 					Смотреть проект
-				 				</button>
-
-				 			</div>
-				 			<div class="col-5 offset-1 people">
-				 				<div class="people__title">
+					<div class="slider">
+						<div class="slider__left testimoni">
+							<img src="img/port.jpg">
+				 			<div class="portfolio__bg"></div>
+				 			<button class="btn btn--first testimoni__btn">
+				 				Смотреть проект
+				 			</button>
+						</div>
+						<div class="slider__right people">
+							<div class="people__title">
 				 					Lillia Livingston
 				 				</div>
-				 				<div class="people__subtitle">
-				 					Mariupol,Ukraine
+				 				<div class="people__subtitle people__subtitle--right">
+				 					<div class="pr-5 ">
+				 						Mariupol, Ukraine
+				 					</div>
+				 					<div class="pl-5">
+				 						example@gmail.com
+				 					</div>
 				 				</div>
 				 				<div class="people__text">
 				 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aliquam ex, fugit sequi minus voluptate illo ducimus quod omnis alias? Dolorum, nulla similique nemo natus! Soluta aperiam hic, ipsa quis tempora est ex, in ipsam magnam laborum quod omnis dignissimos!
 				 				</div>
-				 			</div>
-				 	</div>
-				 	<div class="row">
-				 		<div class="col-5 offset-1 testimoni">
-				 				<img src="img/port.jpg">
-				 				<div class="portfolio__bg"></div>
-				 				<button class="btn btn--first testimoni__btn">
-				 					Смотреть проект
-				 				</button>
+						</div>
+					</div>
+					<div class="slider">
+						<div class="slider__left testimoni">
+							<img src="img/port.jpg">
+				 			<div class="portfolio__bg"></div>
+				 			<button class="btn btn--first testimoni__btn">
+				 				Смотреть проект
+				 			</button>
+						</div>
+						<div class="slider__right people">
+							<div class="people__title">
+				 					Lillia Livingston
+				 				</div>
+				 				<div class="people__subtitle people__subtitle--right">
+				 					<div class="pr-5 ">
+				 						Mariupol, Ukraine
+				 					</div>
+				 					<div class="pl-5">
+				 						example@gmail.com
+				 					</div>
+				 				</div>
+				 				<div class="people__text">
+				 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aliquam ex, fugit sequi minus voluptate illo ducimus quod omnis alias? Dolorum, nulla similique nemo natus! Soluta aperiam hic, ipsa quis tempora est ex, in ipsam magnam laborum quod omnis dignissimos!
+				 				</div>
+						</div>
+					</div>
+				</div>
 
-				 			</div>
-				 			<div class="col-5 offset-1">
-				 				
-				 			</div>
-				   	</div>
+				<div class="row">
+					<div class="col-3 offset-2 d-flex justify-content-center flex-column text-center">
+						<div class="contact">
+							Наши контакты
+						</div>
+						<div class="contact__title">
+							Адрес
+						</div>
+						<div class="contact__subtitle">
+							Украина, г. Мариуполь, ул. Улица д. 1, оф. 6 (5ый этаж)
+						</div>
+						<div class="contact__title">
+							Связь
+						</div>
+						<div class="contact__subtitle">
+							+380 97 91 51 281
+						</div>
+						<div class="contact__subtitle">
+							theroom13s@gmail.com
+						</div>
+					</div>
+					<div class="col-5 offset-1">
+						<form class="message text-center">
+						 	<div class="form-group">
+						      	<input type="name" class="form-control form__services"  placeholder="Ваше имя">
+							</div>
+						    <div class="form-group">
+						      	<input type="name" class="form-control form__services"  placeholder="Телефон">
+							</div>
+							<div class="form-group">
+						      	<input type="name" class="form-control form__services"  placeholder="Email">
+							</div>
+							<div class="form-group">
+						      	<textarea type="name" class="form-control form__services"  placeholder="Сообщение" rows="2">
+						      	</textarea>
+							</div>
+							<button class="btn btn--first">
+								Отправить
+							</button>
+					</form>
+					</div>
 				</div>
 			</div>
 
@@ -392,6 +453,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/TextPlugin.min.js"></script>
 
 		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" >
+
+			<symbol version="1.1" id="arrowRight" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+			<path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+				C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+				c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+			</symbol>
+
+
+
+
 			<symbol version="1.1" id="technical" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 			<style type="text/css">
@@ -516,37 +588,9 @@
 			</svg>
 		
 
-	<section class="bg-sup py-5">
-					<div class="container">
-						<div class="row py-5">
-							<div class="col-12 text-center">
-								<a href="#home"><img class="imgg" src="img/logo-back.png" alt=""></a>
-							</div>
-						</div>
-						<div class="row">
-							<ul class="lisp d-flex justify-content-center mx-auto p-0">
-								<li class="lisp lisp__item mx-3">
-									<a href="">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li class="lisp lisp__item mx-3">
-									<a href="">
-										<i class="fab fa-vk"></i>
-									</a>
-								</li>
-								<li class="lisp lisp__item mx-3">
-									<a href="">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="text-center dark mt-3">
-							 © 2018  The Room 13`s
-						</div>
-					</div>
-			</section>
+	<section class="bg-sup py-4 text-center">
+		Copyright (C) 2019 The Room 13’s. All rights Reserved
+	</section>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
