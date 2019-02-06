@@ -21,9 +21,14 @@
 <body>
 		<section class="section h-100 " id="home">
 	
-	    <nav class="navbar navbar-expand-lg fixed-top design-nav">
+	    <nav class="navbar navbar-expand-lg fixed-top design-nav" id="menu">
 	        <div class="container py-5">
-	            <div class="pl-4 ">
+	            <div class="pl-4 menu__logo" id="logo">
+	                <a href="index.html">
+	                    <img class="" src="img/logo.png">
+	                </a>
+	            </div>
+	            <div class="pl-4" id="telephone">
 	                <div class="telephone"><a href="tel:+380979151281">+38 097 91 51 281</a></div>
 	            </div>
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -199,9 +204,9 @@
 								Интернет-магазин
 							</h3>
 						</div>
-						<button class="btn btn--first mx-auto">
+						<a href="landing-page.html" class="btn btn--first mx-auto">
 							Подробнее
-						</button>
+						</a>
 					</div>
 					<div class="col-lg-3 col-12 text-center services services--middle">
 						<h2 class="services__title">
@@ -300,24 +305,25 @@
 					<div class="article col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias assumenda laboriosam, in ipsa tempore necessitatibus.</div>
 				</div>
 				<div class="portfolios my-5">
-					<div class="mx-3 portfolio" id="portfol">
+					<div class="mx-3 portfolio">
 						<img class="w-100" src="img/port.jpg">
-						<div class="portfolio__title dnone" id="port">The Room 13`s</div>
+						<div class="portfolio__title">The Room 13`s</div>
+						<div class="portfolio__bg"></div>
+						<div class="portfolio__article">Lorem ipsum dolor sit amet, </div>
+					</div>
+					<div class="mx-3 portfolio">
+						<img class="w-100" src="img/port.jpg">
+						<div class="portfolio__title " id="port">The Room 13`s</div>
 						<div class="portfolio__bg"></div>
 					</div>
-					<div class="mx-3 portfolio" id="portfol">
+					<div class="mx-3 portfolio">
 						<img class="w-100" src="img/port.jpg">
-						<div class="portfolio__title dnone" id="port">The Room 13`s</div>
+						<div class="portfolio__title " id="port">The Room 13`s</div>
 						<div class="portfolio__bg"></div>
 					</div>
-					<div class="mx-3 portfolio" id="portfol">
+					<div class="mx-3 portfolio">
 						<img class="w-100" src="img/port.jpg">
-						<div class="portfolio__title dnone" id="port">The Room 13`s</div>
-						<div class="portfolio__bg"></div>
-					</div>
-					<div class="mx-3 portfolio" id="portfol">
-						<img class="w-100" src="img/port.jpg">
-						<div class="portfolio__title dnone" id="port">The Room 13`s</div>
+						<div class="portfolio__title " id="port">The Room 13`s</div>
 						<div class="portfolio__bg"></div>
 					</div>
 				</div>
@@ -438,16 +444,47 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 		<script>
-			var portfolio = $("#portfol");
-			var port = $("#port");
+			$(document).scroll(function() {
+		  		var telephone = $("#telephone");
+		  		var logo = $("#logo");
+		  		var menu = $("#menu");
+		  		// var link = $(".nav-link");
+		  		// var img = $("#image");
+		  		// var dropdown = $(".dropdown-item");
+		  		// var toggler = $("#toggler");
+		  		// var globus = $('#globs');
 
 
-			if (portfolio.hasClass('slick-center')){
-				port.removeClass('dnone');
-			}
-			else {
-				 
-			}
+		    	var top = $(this).scrollTop();
+		    	if ( top >= 500 ) {
+				menu.addClass('backgroundMenu');
+				telephone.addClass('offset-5');
+				logo.fadeIn();
+				// menu.css("background" ,"#fff");
+				// img.attr("src", "img/logo-scroll.png");
+				// dropdown.addClass('color-menu');
+				// toggler.removeClass('white');
+				// globus.addClass('globus-blue');
+
+
+
+		    } else if ( top < 500) {
+				menu.removeClass('backgroundMenu');
+				telephone.removeClass('offset-5');
+				logo.fadeOut(400);
+
+
+				// logo.addClass('d-none');
+
+				// menu.css("background", "transparent");
+				// link.removeClass('color-menu');
+				// img.attr("src", "img/logo.png");
+				// dropdown.removeClass('color-menu');
+				// toggler.addClass('white');
+				// globus.removeClass('globus-blue');
+
+		    }
+  		});
 		</script>
 		
 
