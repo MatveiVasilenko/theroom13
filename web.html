@@ -43,7 +43,7 @@
 	                        </a>
 	                        <div class="dropdown-menu dropdown-menu-right setting" aria-labelledby="navbarDropdown">
 	                            <a class="dropdown-item px-4" href="web.html">Web-разработка</a>
-	                            <a class="dropdown-item px-4" href="#">Продвижение сайтов</a>
+	                            <a class="dropdown-item px-4" href="advance.html">Продвижение сайтов</a>
 	                            <a class="dropdown-item px-4" href="smm.html">SMM</a>
 	                        </div>
 	                    </li>
@@ -67,7 +67,7 @@
 					<div class="article col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias assumenda laboriosam, in ipsa tempore necessitatibus. Sit perferendis aliquam id magnam quis consequatur ipsa quo libero blanditiis ad, alias reiciendis.</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 offset-md-2 group wow fadeInLeft">
+					<a href="landing-page.html" class="col-md-4 offset-md-2 group" >
 						<div class="group__image">
 							<img class="w-100" src="img/landing.png">
 						</div>
@@ -77,8 +77,8 @@
 						<div class="group__vertical"></div>
 						<div class="group__gorisontal group__gorisontal--right"></div>
 						<div class="group__vertical group__vertical--down"></div>
-					</div>
-					<div class="col-md-4 group wow fadeInRight">
+					</a>
+					<a href="" class="col-md-4 group">
 						<div class="group__image">
 							<img class="w-100" src="img/internet.png">
 						</div>
@@ -88,10 +88,10 @@
 						<div class="group__vertical"></div>
 						<div class="group__gorisontal group__gorisontal--right"></div>
 						<div class="group__vertical group__vertical--down"></div>
-					</div>
+					</a>
 				</div>
 				<div class="row">
-					<a class="col-md-4 offset-md-2 group wow fadeInLeft">
+					<a href="" class="col-md-4 offset-md-2 group">
 						<div class="group__image">
 							<img class="w-100" src="img/site.png">
 						</div>
@@ -103,7 +103,7 @@
 						<div class="group__gorisontal group__gorisontal--right"></div>
 						<div class="group__vertical group__vertical--down"></div>
 					</a>
-					<div class="col-md-4 group wow fadeInRight">
+					<a href="" class="col-md-4 group">
 						<div class="group__image">
 							<img class="w-100" src="img/exc.png">
 						</div>
@@ -113,7 +113,7 @@
 						<div class="group__vertical"></div>
 						<div class="group__gorisontal group__gorisontal--right"></div>
 						<div class="group__vertical group__vertical--down"></div>
-					</div>
+					</a>
 				</div>
 
 				<div class="hidden">
@@ -150,7 +150,7 @@
 				<div class="row">
 					<div class="article col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias assumenda laboriosam, in ipsa tempore necessitatibus. Sit perferendis aliquam id magnam quis consequatur ipsa quo libero blanditiis ad, alias reiciendis.</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeIn">
 					<div class="col-md-5 offset-md-1">
 						<div class="testimonial-group">
 							<div class="slider">
@@ -225,9 +225,19 @@
 
 			</div>
 		</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/TextPlugin.min.js"></script>
+
+
+	<script>
+			$(window).on('load', function(){ 
+  				var theroom = $(".therooms");
+  				theroom.removeClass('therooms');
+			});
+	</script>
 
 	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" >
 
@@ -248,7 +258,5 @@
 	<section class="bg-sup py-4 text-center">
 		<div class="container">Copyright (C) 2019 The Room 13’s. All rights Reserved</div>
 	</section>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/scripts.min.js"></script>
 </body>
 </html>

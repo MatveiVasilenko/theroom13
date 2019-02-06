@@ -61,7 +61,7 @@
 	    </nav>
 			<div class="container h-100">
 				<div class="row h-100">
-					<div class="col-md-6 col-10 offset-1 offset-md-3 d-flex flex-column justify-content-center rad-grad theroom wow fadeIn" data-wow-duration="3s">
+					<div class="col-md-6 col-10 offset-1 offset-md-3 d-flex flex-column justify-content-center rad-grad theroom therooms wow fadeIn" data-wow-duration="3s" id="theroom">
 						<div class="title">
 							<p class="title__item title__item--bold">Actual</p>
 							<p class="title__item">Web</p>
@@ -204,7 +204,7 @@
 								Интернет-магазин
 							</h3>
 						</div>
-						<a href="landing-page.html" class="btn btn--first mx-auto">
+						<a href="web.html" class="btn btn--first mx-auto">
 							Подробнее
 						</a>
 					</div>
@@ -230,9 +230,9 @@
 								Messengers
 							</h3>
 						</div>
-						<button class="btn btn--first mx-auto">
+						<a href="advance.html" class="btn btn--first mx-auto">
 							Подробнее
-						</button>
+						</a>
 						<div class="services__image order-md-last order-first">
 							<img src="img/services2.png" class="text-center w-100" alt="">
 						</div>
@@ -262,9 +262,9 @@
 								YouTube
 							</h3>
 						</div>
-						<button class="btn btn--first mx-auto">
+						<a href="smm.html" class="btn btn--first mx-auto">
 							Подробнее
-						</button>
+						</a>
 					</div>
 				</div>
 				<div class="row">
@@ -444,6 +444,10 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 		<script>
+			$(window).on('load', function(){ 
+  				var theroom = $("#theroom");
+  				theroom.removeClass('therooms');
+			});
 			$(document).scroll(function() {
 		  		var telephone = $("#telephone");
 		  		var logo = $("#logo");
@@ -634,7 +638,7 @@
 			</symbol> -->
 			</svg>
 		
-
+	
 	<section class="bg-sup py-4 text-center">
 		<div class="container">Copyright (C) 2019 The Room 13’s. All rights Reserved</div>
 	</section>
