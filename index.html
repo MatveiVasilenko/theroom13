@@ -59,14 +59,14 @@
 	                                    <li><a class="dropdown-item" href="seo.html">SEO</a></li>
 	                                    <li><a class="dropdown-item" href="ppc.html">PPC</a></li>
 	                                    <li><a class="dropdown-item" href="messenger.html">Messengers</a></li>
-	                                    <li><a class="dropdown-item" href="#">Индивидуальный проект</a></li>
+	                                    <li><a class="dropdown-item" href="individual.html">Индивидуальный проект</a></li>
 	                                </ul>
 	                            </li>
 	                            <li class="dropright">
 	                                <a class="dropdown-item subMenu" href="smm.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SMM</a>
 	                                <ul class="dropdown-menu setting dropdown-subcontent nule" aria-labelledby="navbarDropdown">
-	                                    <li><a class="dropdown-item" href="#">Facebook, VK</a></li>
-	                                    <li><a class="dropdown-item" href="#">Instagram</a></li>
+	                                    <li><a class="dropdown-item" href="facebook.html">Facebook, VK</a></li>
+	                                    <li><a class="dropdown-item" href="instagram.html">Instagram</a></li>
 	                                </ul>
 	                            </li>
 	                        </ul>
@@ -102,11 +102,11 @@
 					</div>
 					<div class="hidden">
 						<ul class="navigation">
-							<li class="navigation__item"><a href="#home"></a></li>
-							<li class="navigation__item"><a href="#about"></a></li>
-							<li class="navigation__item"><a href="#services"></a></li>
-							<li class="navigation__item"><a href="#portfolio"></a></li>
-							<li class="navigation__item navigation__item--last"><a href="#testimonials"></a></li>
+							<li class="navigation__item"><a id="icon1" href="#home"></a></li>
+							<li class="navigation__item"><a id="icon2" href="#about"></a></li>
+							<li class="navigation__item"><a id="icon3" href="#services"></a></li>
+							<li class="navigation__item"><a id="icon4" href="#portfolio"></a></li>
+							<li class="navigation__item navigation__item--last"><a id="icon5" href="#testimonials"></a></li>
 							<div class="navigation__slicer">
 								Следите за нами
 							</div>
@@ -324,7 +324,7 @@
 					<h1 class="h1 mx-auto my-5">Наши работы</h1>
 				</div>
 				<div class="row">
-					<div class="article col-8 offset-2">Мы выполнили больше чем 50 проектов и некоторые из них мы хотели бы показать Вам</div>
+					<div class="article col-8 offset-2">Мы выполнили более чем 50 проектов и некоторые из них мы хотели бы показать Вам</div>
 				</div>
 				<div class="portfolios my-5 wow fadeIn" data-wow-duration="2s">
 					<div class="mx-3 portfolio">
@@ -472,7 +472,7 @@
 	            $('.subMenu').addClass('dropdown-toggle').attr('data-toggle', 'dropdown');
 	          }
 	          else {
-	            $('.subMenu').removeClass('dropdown-toggle').attr('data-toggle', '');
+	            $('.subMenu').removeClass('dropdown-toggle').removeAttr('data-toggle');
 	          }
 	       });
 	</script>
@@ -510,16 +510,6 @@
 				telephone.removeClass('offset-5');
 				logo.fadeOut(400);
 
-
-				// logo.addClass('d-none');
-
-				// menu.css("background", "transparent");
-				// link.removeClass('color-menu');
-				// img.attr("src", "img/logo.png");
-				// dropdown.removeClass('color-menu');
-				// toggler.addClass('white');
-				// globus.removeClass('globus-blue');
-
 		    }
   		});
 			(function($){
@@ -537,15 +527,8 @@
 				  return false;
 				});
 			})(jQuery)
-			$(document).ready( function() {
-			    /* Check width on page load*/
-			    if ( $(window).width() < 768) {
-			     	$('.subMenu').addClass('dropdown-toggle').attr('data-toggle', 'dropdown');
-			    }
-			    else {
-			    	$('.subMenu').removeClass('dropdown-toggle').attr('data-toggle', '');
-			    }
-			 });
+			
+			
 		</script>
 		
 

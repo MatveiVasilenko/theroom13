@@ -57,14 +57,14 @@
 	                                    <li><a class="dropdown-item" href="seo.html">SEO</a></li>
 	                                    <li><a class="dropdown-item" href="ppc.html">PPC</a></li>
 	                                    <li><a class="dropdown-item" href="messenger.html">Messengers</a></li>
-	                                    <li><a class="dropdown-item" href="#">Индивидуальный проект</a></li>
+	                                    <li><a class="dropdown-item" href="individual.html">Индивидуальный проект</a></li>
 	                                </ul>
 	                            </li>
 	                            <li class="dropright">
 	                                <a class="dropdown-item subMenu" href="smm.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SMM</a>
 	                                <ul class="dropdown-menu setting dropdown-subcontent nule" aria-labelledby="navbarDropdown">
-	                                    <li><a class="dropdown-item" href="#">Facebook, VK</a></li>
-	                                    <li><a class="dropdown-item" href="#">Instagram</a></li>
+	                                    <li><a class="dropdown-item" href="facebook.html">Facebook, VK</a></li>
+	                                    <li><a class="dropdown-item" href="instagram.html">Instagram</a></li>
 	                                </ul>
 	                            </li>
 	                        </ul>
@@ -80,7 +80,7 @@
 	        </div>
 	    </nav>
 
-		<section class="h-100 section section__subgroup subgroup">
+		<section class="h-100 section section__subgroup subgroup" id="home">
 			<div class="subgroup__line wow fadeInRight"></div>
 			<div class="subgroup__door wow fadeIn">
 				 <div class="subgroup__door--item"></div>
@@ -93,7 +93,7 @@
 						<div class="row subgroup__subtitle">
 							Разработка
 						</div>
-						<div class="row subgroup__title">
+						<div class="row subgroup__title subgroup__title--small">
 							Эксклюзивного сайта
 						</div>
 						<div class="row">
@@ -110,7 +110,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-5 subgroup__article mb-5">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis beatae, possimus doloremque ea omnis ullam, nostrum rem, excepturi quam ex vel. Nisi itaque nostrum fuga impedit! Nostrum consectetur, quia!
+								Социальный портал? Электронный дневник? Новостной блог? Мы реализуем абсолютно любой проект который придет Вам в голову.
 							</div>
 						</div>
 						
@@ -126,14 +126,14 @@
 			</div>
 		</section>
 
-		<section class="" id="home">
+		<section class="" id="about">
 			<div class="container">
 
 				<div class="row mt-5">
 					<h1 class="h1 h1__padding mx-auto text-center">Особенности <b>Эксклюзивного сайта</b></h1>
 				</div>
 				<div class="row">
-					<div class="article col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias assumenda laboriosam, in ipsa tempore necessitatibus. Sit perferendis aliquam id magnam quis consequatur ipsa quo libero blanditiis ad, alias reiciendis.</div>
+					<div class="article col-8 offset-2">Это может быть web-сайт со специализированным функционалом, например: сервис по продаже билетов. А может быть web-ресурс, посвященный какой-либо одной теме - тематический портал.</div>
 				</div>
 				<div class="row wow fadeIn">
 					<div class="col-md-4 offset-md-2 groupSub">
@@ -190,11 +190,11 @@
 
 				<div class="hidden">
 						<ul class="navigation">
-							<li class="navigation__item"><a href="#home"></a></li>
-							<li class="navigation__item"><a href="#about"></a></li>
-							<li class="navigation__item"><a href="#services"></a></li>
+							<li class="navigation__item"><a id="icon1" href="#home"></a></li>
+							<li class="navigation__item"><a id="icon2" href="#about"></a></li>
+							<li class="navigation__item"><a id="icon3" href="#services"></a></li>
 							<li class="navigation__item"><a href="#portfolio"></a></li>
-							<li class="navigation__item navigation__item--last"><a href="#testimonials"></a></li>
+							<li class="navigation__item navigation__item--last"><a id="icon4" href="#portfolio"></a></li>
 							<div class="navigation__slicer">
 								Следите за нами
 							</div>
@@ -214,7 +214,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section id="services">
 			<div class="container">
 				<div class="row my-5">
 					<h1 class="h1 h1__padding mx-auto">Наш план действий</h1>
@@ -280,13 +280,13 @@
 			</div>
 		</section>
 
-		<section class="py-10" id="services">
+		<section class="py-10" id="portfolio">
 			<div class="container">
 				<div class="row">
 					<h1 class="h1 mx-auto">Наши работы</h1>
 				</div>
 				<div class="row">
-					<div class="article col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias assumenda laboriosam, in ipsa tempore necessitatibus. Sit perferendis aliquam id magnam quis consequatur ipsa quo libero blanditiis ad, alias reiciendis.</div>
+					<div class="article col-8 offset-2">Имидж и узнаваемость - именно эти составляющие может подарить Вам успешное созздание уникального сайт. Хотите взглянуть на некоторые из них?</div>
 				</div>
 				<div class="row wow fadeIn">
 					<div class="col-md-5 offset-md-1">
@@ -395,7 +395,7 @@
 	            $('.subMenu').addClass('dropdown-toggle').attr('data-toggle', 'dropdown');
 	          }
 	          else {
-	            $('.subMenu').removeClass('dropdown-toggle').attr('data-toggle', '');
+	            $('.subMenu').removeClass('dropdown-toggle').removeAttr('data-toggle');
 	          }
 	       });
 	</script>
